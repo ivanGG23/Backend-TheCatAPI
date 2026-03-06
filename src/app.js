@@ -6,7 +6,7 @@ const errorHandler = require('./middlewares/errorHandler');
 const app = express();
 
 app.use(cors({
-    origin: ['http://localhost:8080', 'http://127.0.0.1:5500', 'frontendthecatapi-is0jqspnb-ivangg23s-projects.vercel.app']
+    origin: ['http://localhost:8080', 'http://127.0.0.1:5500', 'https://frontendthecatapi.vercel.app/']
 }));
 
 app.use(express.json());
