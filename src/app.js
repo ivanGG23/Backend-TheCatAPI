@@ -6,12 +6,17 @@ const errorHandler = require('./middlewares/errorHandler');
 const app = express();
 
 app.use(cors({
-    origin: ['http://localhost:8080', 'http://127.0.0.1:5500', 'https://frontendthecatapi.vercel.app/', 'frontendthecatapi-is0jqspnb-ivangg23s-projects.vercel.app', ]
+    origin: [
+    'http://localhost:8080',
+    'http://127.0.0.1:5500',
+    'https://frontendthecatapi.vercel.app',
+    'https://frontendthecatapi-is0jqspnb-ivangg23s-projects.vercel.app',
+]
 }));
 
 app.use(express.json());
 
-app.use('api/cats', catRoutes);
+app.use('/api/cats', catRoutes);
 
 app.get('/health', (req, res) => {
     res.json({ status: 'OK', message: 'Server corriendo' });
