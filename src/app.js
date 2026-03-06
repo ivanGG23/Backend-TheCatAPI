@@ -7,7 +7,10 @@ const app = express();
 
 app.use(cors({
     origin: [
-    "https://frontendthecatapi.vercel.app"
+        "http://localhost:5500",
+        "http://127.0.0.1:5500",
+        "https://frontendthecatapi.vercel.app",
+        "https://frontendthecatapi-is0jqspnb-ivangg23s-projects.vercel.app"
 ]
 }));
 
