@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors({
     origin: [
-    "*"
+    "https://frontendthecatapi.vercel.app"
 ]
 }));
 
